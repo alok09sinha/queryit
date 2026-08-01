@@ -1,0 +1,57 @@
+---
+import { incident001 } from "../../data/projects/incident001";
+
+const slide = incident001.slides[0];
+---
+
+<div class="canvas-wrapper">
+
+    <div class="instagram-slide">
+
+        <div class="slide-header">
+
+            <div class="brand">
+                QUERY<span>IT</span>
+            </div>
+
+            <div class="slide-number">
+                01/08
+            </div>
+
+        </div>
+
+        <div class="badge">
+            🔴 {incident001.name}
+        </div>
+
+        <div class="slide-content">
+
+            <h1>{slide.title}</h1>
+
+            <h2>{slide.subtitle}</h2>
+
+            <h1 class="highlight">
+                {slide.highlight}
+            </h1>
+
+            <p class="description">
+                {slide.description}
+            </p>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="footer-brand">
+                QUERY<span>IT</span>
+            </div>
+
+            <div class="footer-text">
+                Think Like a Network Architect
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

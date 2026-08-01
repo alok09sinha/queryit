@@ -1,0 +1,36 @@
+---
+const slides = [
+  "Cover",
+  "Problem",
+  "Wrong Assumption",
+  "Investigation",
+  "Root Cause",
+  "Resolution",
+  "Lessons Learned",
+  "Call To Action"
+];
+---
+
+<div class="sidebar-header">
+
+    <h2>Slides</h2>
+
+    <button>+ New Post</button>
+
+</div>
+
+<div class="slide-list">
+
+    {
+        slides.map((slide,index)=>(
+            <div class={`slide-item ${index===0?"active":""}`}>
+
+                <span>{index+1}</span>
+
+                <p>{slide}</p>
+
+            </div>
+        ))
+    }
+
+</div>
